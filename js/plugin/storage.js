@@ -3,7 +3,9 @@
  * Date: 2019/2/22
  * Description: storage
  */
-export default class storage {
+import base from '../model/base';
+
+export default class storage extends base {
   isEnableEncrypt () {
     return false;
   }
@@ -67,7 +69,7 @@ export default class storage {
     try {
       this.getStorageIns().setStorageSync(this.encodeStorageKey(key), this.encodeStorageValue(value));
     } catch (e) {
-      this.getEngine().warn(`缓存错误`, e);
+      // 输出错误
     }
   }
 
