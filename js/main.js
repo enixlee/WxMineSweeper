@@ -21,7 +21,7 @@ export default class Main {
 
     this.restart();
 
-    // databus.enemys.push(new Mine());
+    new Mine().drawToCanvas(ctx);
   }
 
   restart () {
