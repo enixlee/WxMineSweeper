@@ -1,6 +1,6 @@
 import Sprite from '../base/sprite'
 
-const MINE_IMG_SRC = 'images/mine48.png'
+const MINE_IMG_SRC = 'images/mine48.png';
 const MINE_WIDTH = 16;
 const MINE_HEIGHT = 16;
 
