@@ -5,6 +5,7 @@ import GameInfo from './runtime/gameinfo'
 import Music from './runtime/music'
 import DataBus from './databus'
 import Engine from './plugin/engine';
+import player from './model/player';
 
 let ctx = canvas.getContext('2d');
 let databus = new DataBus();
@@ -22,6 +23,8 @@ export default class Main {
   }
 
   restart () {
+    GameGlobal.$engine.printf((new player()).toArray());
+
     databus.reset();
 
     canvas.removeEventListener(
