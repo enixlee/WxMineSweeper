@@ -115,4 +115,8 @@ export default class level extends base {
       && this[__.gameHeight] === level.getGameHeight()
       && this[__.mineNum] === level.getMineNum();
   }
+
+  getSerializeMap () {
+    return __;
+  }
 }
